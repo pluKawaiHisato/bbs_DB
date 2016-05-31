@@ -1,5 +1,6 @@
-CREATE TABLE bbs.post 
+'CREATE TABLE `posts` 
 (
-	  post_id		int				PRIMARY KEY AUTO_INCREMENT
-	, post_name		varchar(255) 	NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
 )

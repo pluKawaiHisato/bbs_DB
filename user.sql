@@ -1,10 +1,12 @@
-CREATE TABLE bbs.user` 
+'CREATE TABLE `users` 
 (
-	  user_id	int 			PRIMARY KEY  AUTO_INCREMENT
-	, login_id	varchar(20) 	NOT NULL UNIQUE
-	, password   varchar(255) 	NOT NULL
-	, name 		varchar(10) 	NOT NULL
-	, branch` 	int				NOT NULL
-	, post		int				NOT NULL
-	, status	int				NOT NULL
-)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `login_id` varchar(20) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `name` varchar(10) NOT NULL,
+  `branch_id` int(11) NOT NULL,
+  `post_id` int(11) NOT NULL,
+  `status` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `login_id_UNIQUE` (`login_id`)
+) 

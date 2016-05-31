@@ -1,5 +1,7 @@
-CREATE TABLE bbs.branch 
+CREATE TABLE `branchs`
 (
-  `branch_id		int		PRIMARY KEY AUTO_INCREMENT
-  ,branch_name` 	varchar(255) 	NOT NULL
-)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `branch_name_UNIQUE` (`name`)
+) 
