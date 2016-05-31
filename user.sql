@@ -6,7 +6,7 @@
   `name` varchar(10) NOT NULL,
   `branch_id` int(11) NOT NULL,
   `post_id` int(11) NOT NULL,
-  `status` int(11) NOT NULL,
+  `status` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `login_id_UNIQUE` (`login_id`)
-) 
+)
